@@ -1,0 +1,291 @@
+/* =====CHAT CONVERSATION COMPONENT STYLE ===== */
+/* ===== CHAT TITLE COMPONENT ===== */
+.chatTitleCon {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 11%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+  background-color: rgb(240, 240, 240);
+  border-left: 0.2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 78px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.chatTitle {
+  display: flex;
+  width: 80%;
+}
+.groupAvatar {
+  margin: auto 5px;
+  margin-left: 8px;
+  height: 100%;
+  width: 60px;
+  cursor: pointer;
+}
+.groupName {
+  cursor: pointer;
+  font-weight: 500;
+}
+.BackTo {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  color: #707070;
+  cursor: pointer;
+  display: none;
+}
+.CountgroupMembers {
+  font-size: 11px;
+  color: #707070;
+}
+.LogOut {
+  margin: 15px;
+  color: #707070;
+  z-index: 100;
+  /* position: fixed; */
+  cursor: pointer;
+}
+.groupAvatar img {
+  width: 45px;
+  height: 45px;
+  border-radius: 400px;
+}
+/* ===== CHAT Form COMPONENT ===== */
+#msg-form-container {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  padding-bottom: 4px;
+}
+.relForm {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+textarea::-webkit-scrollbar{
+  display: none;
+}
+textarea {
+  resize: none;
+  height: 53px;
+  font-size: small;
+  width: 95%;
+  max-height: 200px;
+  overflow-y: auto;
+  white-space: pre-line;
+  padding: 0.8rem 60px;
+  padding-bottom: 0px;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+  background-color: rgb(240, 240, 240);
+  transition: box-shadow 0.5s ease;
+  scrollbar-width: none !important;
+  letter-spacing: 1.4px;
+}
+textarea:focus {
+  outline: none;
+}
+textarea:valid {
+  box-shadow: none;
+  color: #18191a;
+}
+.anticon-paper-clip {
+  position: absolute;
+  margin-top: -2px;
+  left: 52px;
+  cursor: pointer;
+  display: inline-block;
+  color: rgb(132, 129, 129);
+  font-size: 30px;
+  transform: rotate(140deg);
+}
+
+#ce-send-message-button {
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  right: 40px;
+  top: 13px;
+}
+.anticon-arrow-up {
+  color: #a78cf9;
+  font-size: 10px !important;
+  filter: drop-shadow(0 0 1px rgb(30, 30, 30, 0.4));
+}
+.hideIcon {
+  visibility: hidden;
+}
+/* ====Chat message component ===== */
+.listMessages {
+  height: 80%;
+  width: 100%;
+  overflow-x: hidden;
+  margin-bottom: 5%;
+  margin-top: 7.2%;
+  padding-bottom: 3%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #776ef7 #c3c6f1;
+}
+.listMessages li {
+  list-style: none;
+  /* max-width: 35%; */
+}
+.conMessageDate {
+  width: 100%;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  color: rgba(95, 94, 95, 0.6);
+}
+.messageItem {
+  margin-left: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  /* width: max-content; */
+}
+.messageAuth {
+  font-weight: 500;
+}
+
+.messageTimestamp {
+  position: absolute;
+  padding: 5px;
+  margin: 0px 3px;
+  margin-left: 10px;
+  color: rgba(27, 24, 27, 0.3);
+  font-size: 0.65rem;
+  display: flex;
+  bottom: 2px;
+  right: 0;
+  padding-bottom: 0;
+}
+.MessageContainer {
+  display: flex;
+}
+.MessageInfo {
+  position: relative;
+  padding: 1px 8px;
+  background-color: #f0f0f0;
+  max-width: 40%;
+  height: max-content;
+  text-align: left;
+  box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: small;
+  padding-right: 80px;
+  caret-color: #a78cf9;
+  margin-bottom: 10px;
+}
+.MessageInfo:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #f0f0f0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  top: 0;
+  left: -15px;
+  z-index: 0;
+}
+
+.avatarReceived {
+  width: 30px;
+  height: 30px;
+  border-radius: 13px;
+  background-image: url("../../image/user2.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30px;
+  align-self: flex-start;
+  box-shadow: 0, 10, 15, rgb(11, 10, 10);
+  transition: all 0.33s ease 0s;
+  margin-right: 20px;
+  clear: both;
+}
+.avatarsender {
+  background-image: url("../../image/user1.png");
+  align-self: flex-end;
+  margin-right: unset;
+  margin-left: 20px;
+}
+.send {
+  float: right;
+}
+.send .MessageInfo {
+  background-color: #babefb;
+}
+.send .MessageInfo::after {
+  border-bottom: 15px solid #babefb;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: unset;
+  left: unset;
+  right: -10px;
+  top: unset;
+  bottom: 0;
+}
+.send {
+  margin-right: 2%;
+  flex-direction: row-reverse;
+}
+.send .messageTimestamp {
+  right: 20px;
+}
+
+/*==== media === */
+@media only screen and (max-width: 600px) {
+  .chatTitleCon {
+    height: 13vh;
+   
+  }
+  .anticon-paper-clip {
+    /* top: calc(1vh - 10%); */
+    left: 28px;
+  }
+
+  .listMessages {
+    /* height: 76%; */
+    margin-top: 13%;
+    margin-bottom: 1%;
+  }
+  .MessageInfo {
+    padding: 1px 8px;
+    width: 70%;
+    max-width: 80%;
+  }
+  .messageItem {
+    width: 100%;
+  }
+  #msg-form-container {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  textarea {
+    /* height: 75px; */
+    width: 100%;
+    border-radius: 0;
+  }
+  .messageTimestamp {
+    font-size: 8px !important;
+  }
+  .BackTo {
+    display: block;
+    align-self: center;
+  }
+  #ce-send-message-button {
+    right: 20px;
+  }
+}

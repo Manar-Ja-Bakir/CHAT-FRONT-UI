@@ -1,0 +1,221 @@
+/* ===Modal component Style==== */
+.ModalBox {
+  position: relative;
+  height: 550px;
+  width: 370px;
+  background-color: rgb(240, 239, 241);
+  margin: 0 auto;
+  margin-top: 50px;
+  outline: none;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-size: 14px !important;
+
+
+}
+.ModalBoxContainer {
+  height: 100%;
+  background-color: transparent;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+.ModalBoxContainer::-webkit-scrollbar {
+  display: none;
+}
+.infoHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 26%;
+  padding: 15px;
+  background-color: #ffff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+.groupDescription {
+  font-size: 13px;
+  padding: 18px;
+  background-color: #ffff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+.groupProfile {
+  display: flex;
+  padding-top: 40px;
+}
+.Title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  font-weight: 500;
+  width: 100%;
+  color: #252426;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #ffff;
+}
+
+.groupProfile .groupAvatar {
+  padding: 0;
+}
+.groupProfile .groupAvatar img {
+  width: 60px;
+  height: 60px;
+}
+.groupProfile .groupName {
+  padding-left: 20px;
+  align-self: center;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.groubMedia {
+  height: 100%;
+  padding: 15px;
+  width: 100%;
+  background-color: #ffff;
+  padding-bottom: 80px;
+
+}
+.dropTitle{
+  display: flex;
+  align-items: center;
+  
+}
+.Droptitle .title{
+  align-self: flex-end;
+}
+.desTitle {
+  margin-top: 5px;
+  text-transform: uppercase;
+  color: rgb(84, 84, 83, 0.6);
+}
+.memberItem {
+  padding: 5px 13px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+}
+.listMembersTitle {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+}
+.DropDown {
+  padding: 10px;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.DropDown div:first-child{
+  font-size: 14px;
+}
+.anticon-left {
+  color: #383839;
+  cursor: pointer;
+  font-size: 10px !important;
+  transition: transform 100ms ease 0s;
+}
+.avatarUser {
+  width: 35px;
+  height: 35px;
+  border-radius: 22px;
+  color: white;
+  text-align: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 48px;
+}
+.UserName {
+  padding-left: 10px;
+  align-self: center;
+}
+
+.icon {
+  font-size: 20px !important;
+  color: #919091;
+  margin-right: 10px;
+  align-self: center;
+}
+.iconCher {
+  font-size: 20px !important;
+}
+.list-container {
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  min-height: 0px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+.list-container::-webkit-scrollbar {
+  display: none;
+}
+.ShowListOp{
+height: 50px;
+}
+.block{
+  align-self: center;
+  margin-left: auto;
+}
+
+.show {
+  max-height: 400px;
+  height: 200px;
+}
+.hidden {
+  height: 0px;
+}
+.autocompleteItem {
+  text-align: center;
+}
+
+.ce-autocomplete-input {
+  border: none;
+  width: 300px;
+  padding: 5px;
+  margin: 10px auto;
+  align-self: center;
+  border-bottom: 1px solid #525054 !important;
+}
+.ce-autocomplete-input:focus {
+  outline: none !important ;
+}
+.UserStatus {
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  border: 2px solid white;
+  background-color: rgb(245, 34, 45);
+  transform: translateY(-38px);
+}
+
+.rotate {
+  transform: rotate(-90deg);
+}
+.logOutOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: max-content;
+  color: #373737 !important;
+  padding: 5px 13px;
+}
+.iconLeave {
+  font-size: 16px !important;
+  cursor: pointer;
+}
+
