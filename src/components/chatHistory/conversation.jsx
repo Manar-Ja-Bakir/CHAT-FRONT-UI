@@ -3,6 +3,15 @@ import "./chatHistory.css";
 import imgConvjava from "../../image/java.jpg";
 import GroupIcon from "@mui/icons-material/Group";
 const CONVERSATION = () => {
+  // allConversations=[
+  //   {
+  //     image:
+  //       "imgConvjava",
+  //     id: 1,
+  //     name: "Java",
+  //   
+  //   },
+  // ];
   return (
     <ul className="conversation-list">
       <li className="conversation-item"

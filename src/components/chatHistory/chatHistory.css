@@ -13,10 +13,34 @@
 }
 .search-box {
   border-radius: 6px;
-  background-color: #f6f5ff;
+  background-color: transparent;
   cursor: pointer;
   width: 90%;
   height: 90%;
+  margin: 0 20px;
+}
+.search-box:focus {
+  border: 2px solid #a78cf9;
+}
+
+.searchCon {
+  display: flex;
+  background-color: #dfdfe2;
+  width: 100%;
+  height: 90%;
+  margin: 0 10px;
+  align-items: center;
+  border-radius: 6px;
+}
+.searchCon .searchIcon {
+  font-size: 25px !important;
+  color: rgb(48, 48, 48);
+}
+.searchCon button {
+  background-color: #dfdfe2;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
 }
 .search-box input {
   height: 100%;
@@ -27,11 +51,9 @@
   background-color: #dfdfe2;
   color: #707070;
   border-radius: 6px;
+
   font-size: 14px;
   font-weight: 500;
-}
-.search-box input:focus {
-  border: 2px solid #a78cf9;
 }
 /*====== conversation component style=====  */
 /*===== conversation item style=====  */
@@ -41,7 +63,6 @@
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: #776ef7 #c3c6f1;
-
 }
 .conversation-item {
   list-style: none;
@@ -231,9 +252,9 @@ header .profile-User .UserName {
   border-radius: 6px;
 }
 @media only screen and (max-width: 600px) {
-  .chatSetting{
+  .chatSetting {
     font-size: 11px;
-    width:50%;
+    width: 50%;
     padding: 10px;
   }
 }
